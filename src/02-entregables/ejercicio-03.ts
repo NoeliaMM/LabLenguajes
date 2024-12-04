@@ -4,11 +4,6 @@ import { UserA,UserB} from './models.js';
 console.log("************** DELIVERABLE 03 *********************");
 
 // 3. Clone Merge
-
-//  Clone
-//  Implementa una función clone que, a par r de un objeto de entrada source devuelva
-//  un nuevo objeto con las propiedades de source :
-
 function clone<T>(source: T): T {
     return JSON.parse(JSON.stringify(source));   
   }
