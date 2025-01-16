@@ -9,7 +9,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "outDir": "transpiled",
-    "resolveJsonModule": true,
+    "resolveJsonModule": true,    
   },
   "compileOnSave": true,
   "exclude": ["node_modules"],

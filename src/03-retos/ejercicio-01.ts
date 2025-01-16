@@ -15,10 +15,8 @@ const triggers : Trigger[] = [
   async () => await showMessage([200, "third"]),
   async () => await showMessage([100, "second"]),
 ];
-
-
-const run = async (triggers: Trigger[]): Promise<void> => {
     
+const run = async (triggers: Trigger[]): Promise<void> => {      
     for (const t of triggers) {
       await t();
     }

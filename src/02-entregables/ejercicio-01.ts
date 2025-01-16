@@ -16,8 +16,13 @@ console.log("************** DELIVERABLE 01 *********************");
  
 
 // Tail
-const tail =([, ...arrayColors]: string[]): string[] => {
-   return arrayColors;
+// const tail =([, ...arrayColors]: string[]): string[] => {
+//    return arrayColors;
+// }
+
+const tail = <T>(array: Readonly<T[]>) : T[]=>{
+   const [,...tail] =array??[];
+   return tail;
 }
 
 console.log("Results tail:",tail(colors) );

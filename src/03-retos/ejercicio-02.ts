@@ -1,8 +1,25 @@
-import { myObject,myNewObjet } from  "./models.js";
 
- console.log("************** RETO 02 *********************");
+console.log("************** RETO 02 *********************");
 
-type Keys = string | number
+type Keys = string | number;
+
+const myObject = {
+  a: 1,
+  b: {
+    c: null,
+    d: {
+      e: 3,
+      f: {
+        g: "bingo",
+        h: {
+          i: "re-bingo",
+        }
+      }
+    }
+  }
+};
+
+const myNewObjet:Record<string, any> ={};
 
 const deepGet = function(source:object, ...itemSearch:Keys[]):any {
 
